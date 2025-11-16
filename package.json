@@ -1,6 +1,6 @@
 {
   "name": "highlight-selection",
-  "displayName": "Highlight Selection (Persistent)",
+  "displayName": "Highlight Selection",
   "description": "Highlight selected text with persistent decorations that survive VS Code restarts.",
   "version": "0.1.0",
   "publisher": "zzf",
