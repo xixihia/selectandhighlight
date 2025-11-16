@@ -1,0 +1,65 @@
+{
+  "name": "highlight-selection",
+  "displayName": "Highlight Selection (Persistent)",
+  "description": "Highlight selected text with persistent decorations that survive VS Code restarts.",
+  "version": "0.1.0",
+  "publisher": "zzf",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "main": "./extension.js",
+  "activationEvents": [
+    "onStartupFinished",
+    "onCommand:highlightSelection.yellow",
+    "onCommand:highlightSelection.green",
+    "onCommand:highlightSelection.blue",
+    "onCommand:highlightSelection.clear"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "highlightSelection.yellow",
+        "title": "Highlight Selection (Yellow)"
+      },
+      {
+        "command": "highlightSelection.green",
+        "title": "Highlight Selection (Green)"
+      },
+      {
+        "command": "highlightSelection.blue",
+        "title": "Highlight Selection (Blue)"
+      },
+      {
+        "command": "highlightSelection.clear",
+        "title": "Clear All Highlights"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "highlightSelection.yellow",
+        "key": "cmd+shift+h",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "highlightSelection.green",
+        "key": "cmd+shift+g",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "highlightSelection.blue",
+        "key": "cmd+shift+b",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "highlightSelection.clear",
+        "key": "cmd+shift+u",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://example.com/placeholder.git"
+  },
+  "categories": ["Other"]
+}
